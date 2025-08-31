@@ -1,0 +1,24 @@
+<html>
+<body>
+
+    <h1>Imprimir los 20 primeros números</h1>
+
+    <button onclick="imprimirNumeros()">Presiona para imprimir</button>
+
+    <script>
+        function imprimirNumeros() {
+            let texto = "";
+
+            for (let i = 1; i <= 20; i++) {
+                texto += i;
+                if (i < 20) {
+                    texto += ", ";
+                }
+            }
+
+            alert("Números del 1 al 20:\n" + texto);
+        }
+    </script>
+
+</body>
+</html>
