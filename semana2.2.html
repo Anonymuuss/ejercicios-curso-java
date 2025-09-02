@@ -1,0 +1,27 @@
+<html>
+<body>
+  <script>
+    const UIT = 5150;
+    const ingreso = prompt("Ingrese su ingreso anual (S/):");
+
+    if (ingreso) {
+      const ingresoAnual = Number(ingreso);
+      const deduccion = 7 * UIT;
+      let rentaNeta = ingresoAnual - deduccion;
+      let impuesto = 0;
+
+      if (rentaNeta > 0) {
+        impuesto = rentaNeta * 0.08;
+      } else {
+        rentaNeta = 0;
+      }
+
+      alert("Renta neta: S/ " + rentaNeta.toFixed(2) +
+            "\nImpuesto a pagar: S/ " + impuesto.toFixed(2));
+    } else {
+      alert("No ingresaste un número válido.");
+    }
+  </script>
+</body>
+</html>
+
